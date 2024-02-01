@@ -99,7 +99,7 @@ if __name__ == '__main__':
     # mode = 'onnx'
     # model_path = 'weights/vehicle_yolov8s_640.onnx'
     mode = 'qualcomm'
-    model_path = 'weights/vehicle_640_bs1_c14_fp32/programqpc.bin'
+    model_path = 'weights/vehicle_640_bs1_c14/programqpc.bin'
     detector = YOLOv8_Qualcomm(model_path=model_path, mode=mode)
     image = cv2.imread('data/anh1.png')
     input_image = detector.prepare_input(image)
